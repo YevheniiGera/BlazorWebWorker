@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BlazorWebWorker</title>
+    <base href="/" />
+</head>
+
+<body>
+    <div>.NET WebAssembly in WebWorker. Press F12</div>
+    <script>
+        var worker = new Worker('worker-service.js', { name: '.NET in WebWorker' });
+    </script>
+</body>
+
+</html>
